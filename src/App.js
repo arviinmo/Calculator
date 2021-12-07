@@ -13,7 +13,11 @@ const App = () => {
   }
 
   const backspace = () => {
-    setResult(result.slice(0,-1))
+    if (result === "Error") {
+      setResult("")
+    } else {
+      setResult(result.slice(0,-1))
+    }
   }
 
   const Result = () => {
