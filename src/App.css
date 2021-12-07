@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-
 * {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  background-color: #E0F9B5;
+}
+
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +20,9 @@ body {
 .container {
   top: 50%;
   left: 50%;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
-  width: 260px;
+  width: 280px;
   text-align: center;
   border: 10px solid #6A2C70;
   background: #6A2C70;
@@ -32,8 +37,8 @@ body {
 
 input[type="text"] {
   height: 75px;
-  width: 250px;
-  background-color: #252A34;
+  width: 260px;
+  background-color: #0D7377;
   border: none;
   color: #EEEEEE;
   text-align: right;
@@ -57,19 +62,39 @@ input[type="text"] {
 
 button {
   margin: 5px;
-  border: none;
+  display: block;
+  border: 0px;
+  transition: 0.2s;
+  background-size: 200% auto;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
+  background-image: linear-gradient(45deg, #22c1c3 0%, #fdbb2d  100%);
+  box-shadow: 0px 0px 14px -7px #f09819;
 }
 
-input::focus,
-input::active,
-button::focus,
-button::after {
+button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  text-decoration: none;
+ }
+
+button:active {
+transform: scale(0.95);
+}
+
+input:focus,
+input:active,
+button:focus,
+button:after {
   outline: none;
 }
 
 .highlight {
   background-color: #B83B5E;
+}
+
+a {
+  text-decoration: none;
+  color: #396EB0;
 }

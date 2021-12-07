@@ -29,6 +29,7 @@ const App = () => {
   }
   return (
     <>
+    <div className="main">
       <div className="container">
         <form>
           <input type="text" value={result} />
@@ -55,6 +56,8 @@ const App = () => {
           <button className="highlight" onClick={Result} id="result">=</button>
         </div>
       </div>
+    </div>
+      
     </>
   );
 }
