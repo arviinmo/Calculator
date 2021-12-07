@@ -3,7 +3,7 @@
 
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 body {
@@ -19,8 +19,8 @@ body {
   transform: translate(-50%, -50%);
   width: 260px;
   text-align: center;
-  border: 10px solid #101116;
-  background: #101116;
+  border: 10px solid #6A2C70;
+  background: #6A2C70;
   border-radius: 8px;
 }
 
@@ -33,13 +33,16 @@ body {
 input[type="text"] {
   height: 75px;
   width: 250px;
-  background-color: rgb(131, 72, 0);
+  background-color: #252A34;
   border: none;
-  color: #ffffff;
+  color: #EEEEEE;
   text-align: right;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   letter-spacing: 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 #clear {
@@ -68,5 +71,5 @@ button::after {
 }
 
 .highlight {
-  background-color: rgb(207, 158, 253);
+  background-color: #B83B5E;
 }
